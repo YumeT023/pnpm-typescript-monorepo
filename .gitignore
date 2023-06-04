@@ -1,0 +1,21 @@
+# IDE
+.vscode
+.idea
+
+# packages
+node_modules
+
+# env
+.env
+.env.local
+
+# build outputs
+dist
+*.d.ts
+*.js
+
+# miscellaneous
+.DS_Store
+.eslintCache
+*.log
+*.tsbuildinfo

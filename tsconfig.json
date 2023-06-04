@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "target": "es5",
+    "module": "esnext",
+    "useDefineForClassFields": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "jsx": "preserve",
+    "newLine": "lf",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "removeComments": false
+  },
+  "include": ["packages/*/src", "packages/*/__tests__"]
+}
