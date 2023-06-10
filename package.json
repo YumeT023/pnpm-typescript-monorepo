@@ -2,7 +2,7 @@
   "private": true,
   "packageManager": "pnpm@8.6.0",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "pnpm -r build",
     "lint": "eslint --cache --ext .ts packages/*/{src,__tests__}/**.ts",
     "format": "prettier --write --cache --parser typescript \"**/*.[tj]s?(x)\"",
     "format-check": "prettier --check --cache --parser typescript \"**/*.[tj]s?(x)\"",
@@ -12,6 +12,9 @@
     "node": ">=16.11.0"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.1",
     "@types/node": "^16.17.1",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
@@ -19,6 +22,11 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.24.1",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-filesize": "^10.0.0",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3"
   }

@@ -1,0 +1,13 @@
+{
+  "name": "@monorepo/compiler",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../conf/rollup.config.mjs && pnpm clean-dts",
+    "clean-dts": "rimraf dist/dts"
+  }
+}
